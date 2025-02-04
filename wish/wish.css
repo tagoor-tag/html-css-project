@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    height: 15%;
+    padding: 10px;
+}
+
+main {
+    height: 87%;
+}
+
+#home-header {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+#home-header #brand {
+    color: white;
+    width: 30%;
+}
+
+
+#brand h1 {
+    color: white;
+    font-size: 38px;
+}
+
+#brand h1:hover {
+    color: orange;
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 18px;
+    position: relative;
+
+}
+
+#links a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: orange;
+    bottom: -10px;
+    left: 0px;
+
+}
+
+#links a:hover::after {
+    width: 100%;
+    transition: 1.5s;
+}
+
+#links a:hover,
+#login i:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+#home-header #links {
+
+    width: 53%;
+}
+
+#home-header #login {
+
+    width: auto;
+}
+
+#login a {
+    color: white;
+    size: 28px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#login button {
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    border: 3px solid orange;
+    font-weight: bold;
+    color: orange;
+    border-radius: 20px;
+}
+
+#login button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.my-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 90%;
+    /* height: 600px; */
+    background-color: aliceblue;
+    box-shadow: 0 0 10px blue;
+    margin: 20px auto;
+}
+
+#details{
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 10px red; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: repeat(5 ,1fr);
+    gap: 10px;
+}
+
+#details div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#details button{
+    padding: 10px 20px;
+}
+
+#details i{
+    font-size: 25px;
+}
+
+#title{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#btn button {
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    margin: 20px auto;
+
+}
+
+#btn button:hover {
+    background-color: orange;
+    color: white;
+}
